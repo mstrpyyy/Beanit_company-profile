@@ -16,6 +16,9 @@ const config: Config = {
         'xwhite': '#EFE9F4',
         'xbrown': '#23120E',
         'xred': '#EF4444',
+        'grey1': '#1d232a',
+        'grey2': '#9ca3b0',
+        'grey3': '#191e24',
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

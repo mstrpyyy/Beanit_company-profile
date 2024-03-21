@@ -2,13 +2,13 @@ import Image, { StaticImageData } from 'next/image';
 import React from 'react'
 
 export default function KeyPlayer({profile, position, name, experience, delayAos}:{profile:StaticImageData, position:string, name:string, experience:string, delayAos:string}) {
-    console.log(profile);
+    // console.log(profile);
     
   return (
     <div
               data-aos="fade-up"
               data-aos-delay={delayAos}
-              className="flex bg-blue1 px-10 py-7 gap-5 rounded-3xl sm:min-w-[40rem] sm:flex-1"
+              className="flex bg-blue1 px-10 py-7 gap-5 rounded-3xl sm:min-w-[35rem] sm:flex-1"
             >
               <div className="hidden md:flex items-center md:shrink-0">
                 <Image

@@ -9,6 +9,12 @@ import female2 from "../../../public/picture/female2.webp";
 import Image from "next/image";
 import KeyPlayer from "@/components/keyplayer";
 import CultureCard from "@/components/culturecard";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "About us",
+  description: "Bean It! about page",
+};
 
 export default function About() {
   return (
@@ -21,11 +27,11 @@ export default function About() {
         <h3 className="text-xwhite text-2xl md:text-4xl font-light text-center mb-10">
           From Local Roots to Global Recognition
         </h3>
-        <div className="mockup-browser border bg-base-300 max-sm:w-[90vw]">
+        <div className="mockup-browser border bg-xblack max-sm:w-[90vw]">
           <div className="mockup-browser-toolbar">
             <div className="input">www.Bean-It-history.com</div>
           </div>
-          <div className="flex justify-center px-4 py-16 bg-base-200">
+          <div className="flex justify-center px-4 py-16 bg-grey3">
             <Timeline />
           </div>
         </div>
@@ -50,7 +56,7 @@ export default function About() {
 
             <KeyPlayer
               profile={female1}
-              delayAos={"300"}
+              delayAos={"100"}
               position={"Coffee Sourcing Manager"}
               name={"Putri Kusuma"}
               experience={
@@ -62,7 +68,7 @@ export default function About() {
           <div className="flex justify-center gap-5 flex-wrap">
             <KeyPlayer
                 profile={female2}
-                delayAos={""}
+                delayAos={"200"}
                 position={"Sustainability Coordinator"}
                 name={"Sari Rahayu"}
                 experience={
