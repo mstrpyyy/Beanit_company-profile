@@ -66,7 +66,7 @@ export default function Navbar() {
       <div className="drawer-side z-20">
         <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay z-20"></label>
         
-        <ul className="menu p-4 w-[50%] max-sm:w-60 min-h-full bg-grey3 z-20">
+        <div className="menu p-4 w-[50%] max-sm:w-60 min-h-fdivl bg-grey3 z-20">
           {/* Sidebar content here */}
           <div className='flex justify-center py-10'>
           <Image src={logo1} alt='logo' width={200} className='w-[250px]' />
@@ -75,7 +75,7 @@ export default function Navbar() {
           <Link href={'/about'} className={`  text-white text-center py-1 rounded-lg ${activeButton === 'about' ? 'active' : ''}`} onClick={() => handleButtonClick('about')}>About</Link>
           <Link href={'/products'} className={`  text-white text-center py-1 rounded-lg ${activeButton === 'products' ? 'active' : ''}`} onClick={() => handleButtonClick('products')}>Products</Link>
           <Link href={'/teams'} className={`  text-white text-center py-1 rounded-lg ${activeButton === 'teams' ? 'active' : ''}`} onClick={() => handleButtonClick('teams')}>Teams</Link>
-        </ul>
+        </div>
       </div>
     </div>
   );

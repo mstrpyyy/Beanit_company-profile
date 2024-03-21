@@ -53,7 +53,7 @@ export default function Home() {
             <h1 className="text-4xl md:text-5xl font-bold text-blue2 mb-5 max-md:text-center">Our Products</h1>
             <h3 className="text-xwhite text-2xl md:text-4xl font-light max-md:text-center mb-2">Experience Excellence: Bean It!'s Assortment of Ethically Sourced Coffee Beans</h3>
             <p className=" font-thin text-md max-md:text-center md:mb-10 text-grey2">Scroll and click the cards to explore our tantalizing array of coffee beans!</p>
-            <Link href={'/products'} className="hover:bg-blue2 text-white font-base text-lg py-3 px-4 rounded-lg transition-colors duration-200 bg-blue1 max-md:hidden flex items-center gap-2 w-36 justify-center">See more <FaArrowUpRightFromSquare className="text-white text-xl" /></Link>
+            <Link href={'/products'} className="hover:bg-blue2 text-white font-base text-lg py-3 px-4 rounded-lg transition-colors duration-200 bg-blue1 max-md:hidden flex items-center gap-2 w-60 justify-center">Our beans collections <FaArrowUpRightFromSquare className="text-white text-xl" /></Link>
           </div>
           <Carousel />
           <Link href={'/products'} className="hover:bg-blue2 text-white font-base text-lg py-3 px-4 rounded-lg transition-colors duration-200 bg-blue1 md:hidden">See more 👀</Link>
