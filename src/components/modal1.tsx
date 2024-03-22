@@ -3,9 +3,9 @@
 import Image, { StaticImageData } from 'next/image'
 import React from 'react'
 
-export default function Modal1({name, type, origin, notes, taste, roast, modalimage }: { name: string, type: string, origin: string, notes: string, taste: string, roast: string, modalimage: StaticImageData }) {
+export default function Modal1({name, type, origin, notes, taste, roast, modalimage, modalId }: { name: string, type: string, origin: string, notes: string, taste: string, roast: string, modalimage: StaticImageData, modalId:string }) {
   const showModal = () => {
-    const modal = document.getElementById('my_modal_4');
+    const modal = document.getElementById(modalId);
     if (modal instanceof HTMLDialogElement) {
         modal.showModal();
     }
@@ -14,7 +14,7 @@ export default function Modal1({name, type, origin, notes, taste, roast, modalim
   return (
       <div>
           <button className="btn bg-blue1 text-xwhite hover:bg-blue2" onClick={showModal}>Details</button>
-          <dialog id="my_modal_4" className="modal">
+          <dialog id={`${modalId}`} className="modal">
               <div className="modal-box w-11/12 max-w-3xl flex justify-center gap-5 bg-grey1">
                   <Image src={modalimage} alt='aceh gayo' className=' hidden md:flex w-[20rem] h-[26rem] rounded-3xl' />
                   <div className='flex flex-col justify-between'>

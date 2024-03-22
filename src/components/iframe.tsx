@@ -26,7 +26,7 @@ export default function GetIframe() {
       };
     
   return (
-    <div>
+    <div data-aos="fade-right" >
         <iframe width="560" height="315" src={`https://www.youtube.com/embed/A1HuXukeWw0?${autoplay}&mute=1`}  loading="lazy"  title="Bean It! introduction video" className="rounded-3xl max-sm:w-[90vw]"></iframe>
     </div>
   )

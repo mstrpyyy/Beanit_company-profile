@@ -84,19 +84,19 @@
 }
 
 .bgabout {
-    background-image:  linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 100%, #11151C 100%),  url('../../public/picture/observe.webp');
+    background-image:  linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 100%, #11151C 100%),  url('../../public/picture/observe2.webp');
     background-position: center;
     background-size: cover;  
 }
 
 .bgteam {
-    background-image:  linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 100%, #11151C 100%),  url('../../public/picture/heroabout.webp');
+    background-image:  linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 100%, #11151C 100%),  url('../../public/picture/teams.webp');
     background-position: center;
     background-size: cover;  
 }
 
 .bgproduct {
-    background-image:  linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 100%, #11151C 100%),  url('../../public/picture/roast.webp');
+    background-image:  linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 100%, #11151C 100%),  url('../../public/picture/roast2.webp');
     background-position: center;
     background-size: cover;  
 }
@@ -122,6 +122,7 @@
     background-image: linear-gradient(to top, hsla(0, 0%, 0%, 0) 50%, hsla(0, 0%, 0%, 0.8) 100%), url('../../public/picture/dig-3.webp');
     background-position: center;
     background-size: cover;
+    
 }
 
 .dig3 {
@@ -130,13 +131,14 @@
     background-size: cover;
 }
 
-.digHover {
+/* .digHover {
     transition: ease 0.5s;
 }
 
 .digHover:hover {
     scale: 102%;
-}
+    
+} */
 
 .dig-title {
     color: white;

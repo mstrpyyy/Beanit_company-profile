@@ -10,6 +10,13 @@ import Image from "next/image";
 import KeyPlayer from "@/components/keyplayer";
 import CultureCard from "@/components/culturecard";
 import { Metadata } from 'next';
+import { FaHandHoldingHeart } from "react-icons/fa";
+import { PiPlantFill } from "react-icons/pi";
+import { GiCoffeeBeans } from "react-icons/gi";
+import { FaHandshakeAngle } from "react-icons/fa6";
+import { HiLightBulb } from "react-icons/hi";
+import { FaHeadset } from "react-icons/fa";
+
 
 export const metadata: Metadata = {
   title: "About us",
@@ -24,12 +31,12 @@ export default function About() {
         <h1 className="text-4xl md:text-5xl font-bold text-blue2 mb-5 max-md:text-center">
           Our History
         </h1>
-        <h3 className="text-xwhite text-2xl md:text-4xl font-light text-center mb-10">
+        <h2 className="text-xwhite text-2xl md:text-4xl font-light text-center mb-10">
           From Local Roots to Global Recognition
-        </h3>
+        </h2>
         <div className="mockup-browser border bg-xblack max-sm:w-[90vw]">
-          <div className="mockup-browser-toolbar">
-            <div className="input">www.Bean-It-history.com</div>
+          <div className="mockup-browser-toolbar ">
+            <div className="input text-grey2 bg-grey1">www.Bean-It-history.com</div>
           </div>
           <div className="flex justify-center px-4 py-16 bg-grey3">
             <Timeline />
@@ -90,35 +97,41 @@ export default function About() {
       </div>
 
       <div className="flex justify-center pb-10 scrollcontrol" id="culture">
-        <div className="w-[80vw]">
+        <div className="w-[80vw] max-sm:w-[90vw]">
         <h1 className="text-4xl md:text-5xl font-bold text-blue2 mb-5 text-center">
           Our Cultures
         </h1>
-        <h3 className="text-xwhite text-xl md:text-3xl font-light text-center mb-10">
+        <h2 className="text-xwhite text-xl md:text-3xl font-light text-center mb-10">
             At Bean It!, ethics and sustainability drive every decision. We build lasting partnerships with coffee farmers, ensuring fair compensation and promoting sustainable practices. Our commitment extends to environmental responsibility, minimizing waste and reducing our carbon footprint.
-        </h3>
-            <div className="divider"></div>
-                <CultureCard 
+        </h2>
+            <div data-aos="zoom-in" className="divider"></div>
+                <CultureCard
+                    icons={<FaHandHoldingHeart />}
                     title={"Ethical Sourcing"} 
                     text={"We believe in doing the right thing, which is why ethical sourcing is at the forefront of our operations. We build strong relationships with coffee farmers and cooperatives, paying fair prices for their hard work and ensuring they receive the recognition they deserve."} /> 
-            <div className="divider"></div> 
-                <CultureCard 
+            <div data-aos="zoom-in" className="divider"></div> 
+                <CultureCard
+                    icons={<PiPlantFill />}
                     title={"Sustainability"} 
                     text={"We're committed to minimizing our environmental impact. From reducing waste in our packaging to implementing eco-friendly practices in our operations, we strive to promote sustainability at every level of our business."} /> 
-            <div className="divider"></div> 
-                <CultureCard 
+            <div data-aos="zoom-in" className="divider"></div> 
+                <CultureCard
+                    icons={<GiCoffeeBeans />}
                     title={"Passion for Coffee"} 
                     text={"Coffee isn't just a beverage; it's a way of life for us. We're passionate about the entire coffee journey, from bean to cup. This passion drives us to continually seek out the best beans, perfect our roasting techniques, and deliver exceptional coffee experiences to our customers."} />
-            <div className="divider"></div> 
+            <div data-aos="zoom-in" className="divider"></div> 
                 <CultureCard 
+                    icons={<FaHandshakeAngle />}
                     title={"Team Collaboration"} 
                     text={"We believe in the power of teamwork. Collaboration is key to our success, and we foster an environment where every team member's voice is heard and valued. Together, we work towards our common goal of bringing great coffee to the world."} />
-            <div className="divider"></div>
+            <div data-aos="zoom-in" className="divider"></div>
                 <CultureCard 
+                    icons={<HiLightBulb />}
                     title={"Improvement"} 
                     text={"We're always striving to do better. Whether it's refining our sourcing practices, enhancing the quality of our products, or finding new ways to serve our customers, we're dedicated to continuous improvement and innovation."} /> 
-            <div className="divider"></div>
+            <div data-aos="zoom-in" className="divider"></div>
                 <CultureCard 
+                    icons={<FaHeadset />}
                     title={"Customer-Centric"} 
                     text={"Our customers are at the heart of everything we do. We listen to their feedback, understand their needs, and go above and beyond to exceed their expectations. Our goal is to build lasting relationships with our customers based on trust, reliability, and exceptional service."} />
             <div className="divider"></div> 

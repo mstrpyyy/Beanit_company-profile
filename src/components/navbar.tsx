@@ -59,7 +59,7 @@ export default function Navbar() {
                   <Link href={'/teams'} className={`hover:bg-xwhite hover:text-blue1 hover:font-bold hover:shadow-[0px_0px_10px_-4px_rgba(0,0,0,0.9)] text-white w-20 text-center py-1 rounded-lg ${activeButton === 'teams' ? 'active' : ''}`} onClick={() => handleButtonClick('teams')}>Teams</Link>
                 </div>
               </div>
-              <Link href={'/'} className='text-white max-md:hidden w-24 text-center bg-blue2 py-1 rounded-lg text-base shadow-[0px_0px_10px_-7px_rgba(0,0,0,0.9)] hover:bg-xwhite hover:text-blue1 hover:font-bold'>Contact</Link>
+              <Link href={'/'} className='text-blue1 max-md:hidden w-24 text-center bg-xwhite py-1 rounded-lg text-base shadow-[0px_0px_10px_-7px_rgba(0,0,0,0.9)] hover:bg-grey1 hover:text-xwhite font-bold'>Contact</Link>
           </div>
         </div>
       </div>

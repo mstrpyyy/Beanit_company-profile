@@ -28,12 +28,12 @@ export default function Product() {
                 <h1 className="text-4xl md:text-5xl font-bold text-blue2 mb-5 max-md:text-center">
                     Single Origin Beans
                 </h1>
-                <h3 className="text-xwhite text-xl md:text-2xl font-light text-center mb-10">
+                <h2 className="text-xwhite text-xl md:text-2xl font-light text-center mb-10">
                 Indulge in the pure taste of single origin beans, sourced sustainably and ethically to preserve the land and support communities.
-                </h3>
-                <div className='flex justify-center gap-5 flex-wrap w-[90vw] xl:w-[1000px]'>
+                </h2>
+                <div data-aos="fade-up" className='flex justify-center gap-5 flex-wrap w-[90vw] xl:w-[1000px]'>
                     <ProductCard
- 
+                    modalId={'modal1'}
                     bgproduct={'bgprod1'} 
                     name={'Aceh Gayo Natural'} 
                     type={'Single origin coffee'} 
@@ -44,7 +44,7 @@ export default function Product() {
                     modalimage={prod1} />
                 
                     <ProductCard 
- 
+                    modalId={'modal2'}
                     bgproduct={'bgprod2'} 
                     name={'Mt. Batukaru'} 
                     type={'Single origin coffee'} 
@@ -55,7 +55,7 @@ export default function Product() {
                     modalimage={prod2} />
 
                     <ProductCard 
- 
+                    modalId={'modal3'}
                     bgproduct={'bgprod3'} 
                     name={'Solok Natural'} 
                     type={'Single origin coffee'} 
@@ -66,8 +66,8 @@ export default function Product() {
                     modalimage={prod3} />
 
                     <ProductCard 
- 
-                    bgproduct={'bgprod4'} 
+                    modalId={'modal4'}
+                     bgproduct={'bgprod4'} 
                     name={'Toraja Sapan'} 
                     type={'Single origin coffee'} 
                     origin={'Sulawesi'} 
@@ -77,6 +77,7 @@ export default function Product() {
                     modalimage={prod4} />
 
                     <ProductCard  
+                    modalId={'modal5'}
                     bgproduct={'bgprod5'} 
                     name={'Mandailing Washed'} 
                     type={'Single origin coffee'} 
@@ -87,6 +88,7 @@ export default function Product() {
                     modalimage={prod5} />
 
                     <ProductCard  
+                    modalId={'modal6'}
                     bgproduct={'bgprod6'} 
                     name={'Flores Lemonade'} 
                     type={'Single origin coffee'} 
@@ -98,15 +100,16 @@ export default function Product() {
                 </div>
             </div>
             
-            <div className='flex flex-col items-center md:w-[60vw] pb-20'>
+            <div data-aos="fade-up" className='flex flex-col items-center md:w-[60vw] pb-20'>
                 <h1 className="text-4xl md:text-5xl font-bold text-blue2 mb-5 mt-16 max-md:text-center">
                     Premium Blend
                 </h1>
-                <h3 className="text-xwhite text-xl md:text-2xl font-light text-center mb-10">
+                <h2 className="text-xwhite text-xl md:text-2xl font-light text-center mb-10">
                 Savor the exquisite flavor of our premium blend, crafted with sustainable and ethically sourced beans for a deliciously responsible cup.
-                </h3>
+                </h2>
                 <div className='flex justify-center gap-5 flex-wrap w-[90vw] xl:w-[80vw]'>
                     <ProductCard  
+                    modalId={'modal7'}
                     bgproduct={'bgprod7'} 
                     name={'Forte'} 
                     type={'For Espresso'} 
@@ -117,8 +120,8 @@ export default function Product() {
                     modalimage={prod7} />
                 
                     <ProductCard 
- 
-                    bgproduct={'bgprod8'} 
+                    modalId={'modal8'}
+                     bgproduct={'bgprod8'} 
                     name={'Breakfast'} 
                     type={'For Espresso'} 
                     origin={'Premium blend'} 
@@ -128,6 +131,7 @@ export default function Product() {
                     modalimage={prod8} />
 
                     <ProductCard  
+                    modalId={'modal9'}
                     bgproduct={'bgprod9'} 
                     name={'Arabica Premium'} 
                     type={'For Espresso'} 
