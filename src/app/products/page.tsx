@@ -100,14 +100,14 @@ export default function Product() {
                 </div>
             </div>
             
-            <div data-aos="fade-up" className='flex flex-col items-center md:w-[60vw] pb-20'>
+            <div  className='flex flex-col items-center md:w-[60vw] pb-20'>
                 <h1 className="text-4xl md:text-5xl font-bold text-blue2 mb-5 mt-16 max-md:text-center">
                     Premium Blend
                 </h1>
                 <h2 className="text-xwhite text-xl md:text-2xl font-light text-center mb-10">
                 Savor the exquisite flavor of our premium blend, crafted with sustainable and ethically sourced beans for a deliciously responsible cup.
                 </h2>
-                <div className='flex justify-center gap-5 flex-wrap w-[90vw] xl:w-[80vw]'>
+                <div data-aos="fade-up" className='flex justify-center gap-5 flex-wrap w-[90vw] xl:w-[80vw]'>
                     <ProductCard  
                     modalId={'modal7'}
                     bgproduct={'bgprod7'} 
