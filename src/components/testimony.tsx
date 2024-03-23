@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Testimony() {
   return (
-    <div className='w-full flex justify-center items-start gap-5 flex-wrap text-lg'>
+    <div className='w-full max-sm:w-[90vw ] flex justify-center items-start gap-5 flex-wrap text-lg'>
       <div className='flex justify-center flex-wrap md:flex-nowrap gap-5'>
         <div data-aos="zoom-in"  className="group mockup-window border bg-blue1 hover:bg-xwhite transition-colors">
           <div className="py-10 px-4 bg-grey3 group-hover:bg-grey1 h-full text-xwhite font-light text-center flex flex-col justify-between">
