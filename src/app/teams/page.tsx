@@ -9,6 +9,7 @@ import { Metadata } from 'next';
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { IoCall } from "react-icons/io5";
+import PageLocator from "@/components/pagelocator";
 
 export const metadata: Metadata = {
   title: "Teams",
@@ -24,6 +25,7 @@ const member = await getTeam()
 
   return (
     <div>
+      <PageLocator store={"teams"}  />
         <Subhero bgimage={'bgteam'} title={'Meet Our Team'} />
         <div className='flex justify-center bg-xblack'>
           <div className='flex max-md:flex-col justify-start md:justify-center w-[90vw] xl:w-[70vw] flex-wrap gap-10 py-10'>

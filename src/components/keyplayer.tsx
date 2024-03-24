@@ -4,6 +4,7 @@ import React from 'react'
 export default function KeyPlayer({profile, position, name, experience, delayAos}:{profile:StaticImageData, position:string, name:string, experience:string, delayAos:string}) {
     // console.log(profile);
     
+    
   return (
     <div
               data-aos="fade-up"

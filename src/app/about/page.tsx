@@ -16,6 +16,7 @@ import { GiCoffeeBeans } from "react-icons/gi";
 import { FaHandshakeAngle } from "react-icons/fa6";
 import { HiLightBulb } from "react-icons/hi";
 import { FaHeadset } from "react-icons/fa";
+import PageLocator from "@/components/pagelocator";
 
 
 export const metadata: Metadata = {
@@ -23,9 +24,12 @@ export const metadata: Metadata = {
   description: "Bean It! about page",
 };
 
-export default function About() {
+export default function About() { 
+
   return (
+    
     <div className="bg-xblack">
+      <PageLocator store={"about"} />
       <Subhero bgimage={"bgabout"} title={"About Us"} />
       <div className="flex flex-col items-center pt-10 pb-20" id="history">
         <h1 className="text-4xl md:text-5xl font-bold text-blue2 mb-5 max-md:text-center">

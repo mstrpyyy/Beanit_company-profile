@@ -12,6 +12,7 @@ import prod8 from '../../../public/coffee/8.webp'
 import prod9 from '../../../public/coffee/9.webp'
 import Testimony from '@/components/testimony'
 import { Metadata } from 'next';
+import PageLocator from '@/components/pagelocator'
 
 export const metadata: Metadata = {
     title: "Products",
@@ -22,6 +23,7 @@ export const metadata: Metadata = {
 export default function Product() {
   return (
     <div>
+        <PageLocator store={'products'} />
         <Subhero bgimage='bgproduct' title='Products' />
         <div className='flex flex-col items-center bg-xblack'>
             <div className='flex flex-col items-center md:w-[60vw] pt-10'>
