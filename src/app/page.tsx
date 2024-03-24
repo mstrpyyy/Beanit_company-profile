@@ -2,6 +2,7 @@
 import { Carousel } from "@/components/carousel";
 import Hero from "@/components/hero";
 import Overview from "@/components/overview";
+import PageLocator from "@/components/pagelocator";
 import Testimony from "@/components/testimony";
 import Link from "next/link";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
@@ -17,6 +18,7 @@ export default function Home() {
   return (
     <main className="z-10 bg-xblack overflow-x-hidden">
       <Hero />
+      <PageLocator store={"home"} />
       <Overview />
       
       <div className="flex justify-center">
